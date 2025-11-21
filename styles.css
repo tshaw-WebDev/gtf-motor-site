@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header, main, footer {
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:orangered;
+    background-color:lightgray;
+    padding: 5px 10px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ footer {
+    background-color: #FFFFFF;
+    color: orangered;
+    text-align: center;
+    padding: 10px;
+}
+
+main1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url('/home/tswebdev/documents/GTFMotors/GTF Motors/GTFWebsite/images/GTFlocation.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    background-color: black;
+    gap:150px;
+    
+}
+
+
+section {
+    width: 1900px;
+    margin: 10px;
+}
+
+img {
+    max-width: 1500px;
+    height: 300px;
+    
+}
+
+h2{
+    color:#FFFFFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+section p{
+    color:orangered;
+    font-size: 30px;
+    text-align: center; 
+}
+
+/* Existing styles remain unchanged */
+
+.image-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.image-section img {
+    max-width: 600px;
+    height: 300px;
+    
+    margin-bottom: 5px; /* Adjust as needed for spacing */
+}
+
+.content-section {
+    
+    margin: 90px;
+}
+
+.text-content {
+    margin-right: 60px; /* Adjust as needed for spacing */
+    
+}
+
+.text-content h2 {
+    color: #FFFFFF; /* Adjust the color as needed */
+}
+
+.text-content p {
+    color: #FFFFFF; /* Adjust the color as needed */
+    font-size: 20px;
+}    
+
+button {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+    
+    
+}
