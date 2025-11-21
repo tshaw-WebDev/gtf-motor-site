@@ -47,7 +47,7 @@ main1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url('/home/tswebdev/documents/GTFMotors/GTF Motors/GTFWebsite/images/GTFlocation.jpg');
+    background-image: url('images/GTFlocation.jpg');
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
