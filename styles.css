@@ -1,3 +1,16 @@
+header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main > *:first-child {
+    margin-top: 0 !important;
+}
+
+/* Remove browser default margins that cause top white space */
+h1, h2, h3, p {
+    margin-top: 0;
+}
 
 /* ========== GLOBAL RESET + BASE STYLES ========== */
 body {
@@ -64,7 +77,7 @@ main {
     width: 100%;
     min-height: 300px; /* you can adjust the height */
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 /* Make all sections naturally scale */
@@ -177,4 +190,39 @@ button {
         padding: 15px;
         font-size: 1rem;
     }
+}
+/* === HERO BANNER (image + centered text overlay) === */
+.hero-banner {
+    background-image: url("images/GTFlocation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px; /* adjust height if you want taller hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 0;
+    width: 100%;
+}
+
+/* Centered overlay for hero text */
+.hero-overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4); /* transparent dark overlay */
+    padding: 20px 15px;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.hero-overlay h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero-overlay p {
+    margin: 5px 0 0 0;
+    font-size: 1.2rem;
 }
