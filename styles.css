@@ -226,3 +226,19 @@ button {
     margin: 5px 0 0 0;
     font-size: 1.2rem;
 }
+/* CONTACT PAGE FIXES */
+section {
+    width: 100%;
+}
+
+/* Ensures form scales on mobile */
+form {
+    max-width: 600px;
+}
+
+/* Reduce hero spacing on small screens */
+@media (max-width: 600px) {
+    .hero-banner {
+        min-height: 250px;
+    }
+}
