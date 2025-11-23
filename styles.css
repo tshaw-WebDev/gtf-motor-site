@@ -1,22 +1,23 @@
+
+/* ========== GLOBAL RESET + BASE STYLES ========== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 header, main, footer {
-    margin: 0px;
+    margin: 0;
 }
 
-header{
+/* ========== HEADER ========== */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:orangered;
-    background-color:lightgray;
-    padding: 5px 10px;
-    
+    background-color: lightgray;
+    padding: 10px 15px;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -24,10 +25,11 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav li {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 nav a {
@@ -36,102 +38,132 @@ nav a {
     font-weight: bold;
 }
 
- footer {
-    background-color: #FFFFFF;
+/* ========== FOOTER ========== */
+footer {
+    background-color: #ffffff;
     color: orangered;
     text-align: center;
     padding: 10px;
 }
 
-main1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-image: url('images/GTFlocation.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    padding-bottom: 180px;
-    
-}
-
+/* ========== MAIN SECTIONS ========== */
 main {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    background-color: black;
-    gap:150px;
-    
-}
-
-
-section {
-    width: 1900px;
-    margin: 10px;
-}
-
-img {
-    max-width: 1500px;
-    height: 300px;
-    
-}
-
-h2{
-    color:#FFFFFF;
-    font-size: 50px;
-    text-align: center;
-}
-
-section p{
-    color:orangered;
-    font-size: 30px;
-    text-align: center; 
-}
-
-/* Existing styles remain unchanged */
-
-.image-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    margin: 0px;
+    background-color: black;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Make all sections naturally scale */
+section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+}
+
+/* ========== IMAGES ========== */
+img {
+    width: 100%;
+    height: auto; /* Maintain proportions */
+    max-width: 100%;
+}
+
+/* ========== HEADINGS & TEXT ========== */
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section p {
+    color: orangered;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* ========== IMAGE & TEXT LAYOUT (HOME PAGE) ========== */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .image-section img {
-    max-width: 600px;
-    height: 300px;
-    
-    margin-bottom: 5px; /* Adjust as needed for spacing */
-}
-
-.content-section {
-    
-    margin: 90px;
+    flex: 1 1 300px;
+    max-width: 100%;
 }
 
 .text-content {
-    margin-right: 60px; /* Adjust as needed for spacing */
-    
+    margin: 20px;
 }
 
+.text-content p,
 .text-content h2 {
-    color: #FFFFFF; /* Adjust the color as needed */
+    color: #ffffff;
 }
 
-.text-content p {
-    color: #FFFFFF; /* Adjust the color as needed */
-    font-size: 20px;
-}    
-
+/* ========== BUTTONS ========== */
 button {
     background-color: orangered;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
-    
-    
-    
+    border-radius: 5px;
+}
+
+/* ========== MOBILE BREAKPOINTS ========== */
+
+/* Tablet and smaller */
+@media (max-width: 900px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .text-content {
+        margin: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
 }
