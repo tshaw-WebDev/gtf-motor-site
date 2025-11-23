@@ -55,6 +55,17 @@ main {
     gap: 20px;
     padding: 20px;
 }
+/* === HERO BACKGROUND IMAGE (HOMEPAGE) === */
+.hero-banner {
+    background-image: url("images/GTFlocation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 300px; /* you can adjust the height */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 
 /* Make all sections naturally scale */
 section {
