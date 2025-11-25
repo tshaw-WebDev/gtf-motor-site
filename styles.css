@@ -273,3 +273,13 @@ nav ul li a {
 header, footer {
     margin: 0 !important;
 }
+/* Fixes pages where the footer appears too high */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
