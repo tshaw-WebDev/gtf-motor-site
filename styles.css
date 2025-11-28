@@ -283,3 +283,9 @@ body {
 footer {
     margin-top: auto;
 }
+/* CONTACT PAGE FULL-WIDTH FIX */
+.contact-page section {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
